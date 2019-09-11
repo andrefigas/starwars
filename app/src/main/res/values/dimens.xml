@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="dafault_divider">5dp</dimen>
+    <dimen name="space_between_label_and_value">10dp</dimen>
+    <dimen name="card_text_size">18sp</dimen>
+    <dimen name="progress_width">50dp</dimen>
+    <dimen name="progress_card_height">100dp</dimen>
+</resources>

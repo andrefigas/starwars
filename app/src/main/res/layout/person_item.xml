@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+               xmlns:tools="http://schemas.android.com/tools"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+    <TextView
+            android:layout_marginLeft="@dimen/default_margin"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/default_margin"
+            android:textSize="16sp"
+            android:id="@+id/person_item_code"
+            android:padding="10dp"
+            android:minWidth="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dafault_divider"
+            tools:text="1"/>
+
+
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content"
+                                       android:layout_margin="@dimen/default_margin">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:padding="@dimen/default_padding"
+                      android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/person_item_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dafault_divider"
+                    tools:text="Luke Skywalker"/>
+
+            <TextView
+                    android:id="@+id/person_item_species"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dafault_divider"
+                    tools:text="Hummam"/>
+
+            <TextView
+                    android:id="@+id/person_item_vehicles_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/vehicles_count"
+                    android:layout_marginBottom="@dimen/dafault_divider"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">StarWars</string>
+    <string name="vehicles_count">Vehicles:%d</string>
+    <string name="vehicles_details">Vehicles: %s</string>
+    <string name="homeworld_details">Homeworld: %s</string>
+    <string name="species_details">Species: %s</string>
+    <string name="name_details">Name: %s</string>
+    <string name="gender_details">Gender: %s</string>
+    <string name="skin_color_details">Skin color: %s</string>
+    <string name="none">None</string>
+    <string name="api_generic_error">connection failed</string>
+    <string name="developer_name_label">Name</string>
+    <string name="about">About</string>
+    <string name="developer">André Souza</string>
+    <string name="developer_birthday_label">Birthday</string>
+    <string name="developer_birthday">May 24, 1989</string>
+</resources>

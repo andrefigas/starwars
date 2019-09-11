@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+apply from: 'settings.gradle'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "dev.figas.sw"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField("String", "API", "\"$api_project\"")
+        buildConfigField("String", "GOOGLE_API", "\"$api_google\"")
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "com.android.support:appcompat-v7:$appcompat_v7_version"
+    implementation "com.android.support:recyclerview-v7:$appcompat_v7_version"
+    implementation "com.android.support:cardview-v7:$appcompat_v7_version"
+    implementation "com.android.support.constraint:constraint-layout:$constraint_layout_version"
+    testImplementation "junit:junit:$junit_version"
+    androidTestImplementation "com.android.support.test:runner:$test_runner_version"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$espresso_core_version"
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava_android_version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$logging_interceptor_version"
+    implementation "com.facebook.stetho:stetho-okhttp3:$stetho_okhttp3_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$adapter_rxjava2_version"
+    implementation "com.squareup.retrofit2:converter-gson:$converter_gson_version"
+    implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
+    implementation "com.google.dagger:dagger-android:$dagger_version"
+    implementation "com.google.dagger:dagger-android-support:$dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+    implementation "com.squareup.picasso:picasso:$picasso_version"
+    implementation "com.android.support:palette-v7:$appcompat_v7_version"
+}
+
+kapt {
+    generateStubs = true
+}
