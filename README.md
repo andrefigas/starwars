@@ -44,6 +44,6 @@ Para compor a imagem de background:
 - Uma requisição (feita pelo Picasso) para carregar o primeiro resultado
 - Uma requisição ao serviço do Pallete para encontrar cor predominante na imagem. **Nota:** *O Pallete apresentou problemas ao reconhecer imagens completamente brancas, então a cor *white* (branca) foi pré-carregada via código*
 
-### Agradecimentos
+## Agradecimentos
 
 Agradeço à equipe responsável pela [API](https://swapi.co/api/)
